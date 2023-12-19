@@ -1,0 +1,431 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="utf-8">  
+    <title>中国女性传统服饰</title>  
+    <style type="text/css">  
+        @keyframes blink {
+        	  0% { opacity: 1; }  
+        	  50% { opacity: 0; }  
+        	  100% { opacity: 1; }  
+        	}  
+			
+           body{
+              background:url("beijing.jpg")  no-repeat center center;
+              background-size:cover;
+              background-attachment:fixed;
+              background-color:#CCCCCC;
+           }
+		   
+           .main{
+        	
+           }
+           .main div{
+        	align-items: center;
+           }
+         .image-container1{
+        	padding-top: 50px;
+        	display: flex;
+        	flex-direction: row;
+        	justify-content: space-around;
+        	cursor: pointer;
+        	align-items: flex-end;  
+        	position: relative;  
+         }
+         .image-container1 div{
+        	
+         }
+        
+        .shou{
+        	display: flex;
+        	flex-direction: column;
+        	padding-top: 100px;
+        	position: relative;
+            right: 40px;
+        }
+        
+         .shou{
+        	 animation: blink 1s infinite;  
+         }
+         
+         .img2{
+        	padding-top: 230px;
+        	 display: flex;
+        	 flex-direction: row;
+        	 justify-content: space-around;
+        	 cursor: pointer;
+        	 align-items: flex-end;  
+         }
+         
+         .img2 div{
+        	
+         }  
+		 #backButton {  
+		   position: fixed;  
+		   top: 0;  
+		   left: 0;  
+		   z-index: 9999;  
+		   font-size: 30px;
+		 }
+		 
+		
+		#textOne,#textTwo{  
+				 font-size: 25px;
+				 font-family: 楷体;
+		         display: block;  
+		         margin-left: auto;  
+		         margin-right: auto; 
+				  margin-top: 100px;
+		         text-align: center;  
+		         width: 800px;
+				 
+		     }
+			   #textThird,#textSix{
+				   font-size: 25px;
+				   font-family: 楷体;
+				   display: block;  
+				   margin-left: auto;  
+				   margin-right: auto; 
+				    margin-top: 50px;
+				   text-align: center;  
+				   width: 800px;
+			   }
+			   #textFour,#textFive{
+				   font-size: 25px;
+				   font-family: 楷体;
+				   display: block;  
+				   margin-left: auto;  
+				   margin-right: auto; 
+				    margin-top: 100px;
+				   text-align: center;  
+				   width: 800px;
+			   }
+		.red-text {  
+		    color: red;  
+		}
+		#container1{  
+		            position: relative;  
+		            display: inline-block;  
+		        }  
+		  
+		        #leftArrow1, #rightArrow1 ,#leftArrow2, #rightArrow2 {  
+		            position: absolute;  
+		            top: 50%;  
+		            transform: translateY(-50%);  
+		            cursor: pointer;  
+		            font-size: 50px; 
+					display: none; 
+		        }  
+		        #leftArrow1 ,#leftArrow2,#leftArrow3{  
+		            left: -70px;  
+		        }  
+		  #leftArrow3,#rightArrow3{
+			  position: absolute;
+			  top:0;  
+			  transform: translateY(-50%);  
+			  cursor: pointer;  
+			  font-size: 50px; 
+			  display: none;
+		  }
+		        #rightArrow1 ,#rightArrow2 ,#rightArrow3{  
+		            right: -70px;  
+		        }  
+			 
+			  #container2 {  
+			    position: relative;  
+			    display: flex;  
+			    align-items: center;  
+			  }  
+			  #container3 {
+			    position: relative;  
+			    display: flex;  
+			    align-items: center;  
+			  }  
+			 #chunqiuImg,#qinhanImg,#weijinImg,#mingImg, #qingImg,#songImg,#suitangImg{
+			 				   position: relative; 
+			 				  opacity: 0; 
+			 }
+			 #chunqiuImg{
+			 				  animation: flyIn 2s ease-in-out forwards; 
+			 }
+			 #qinhanImg{
+			 				  animation: flyIn 3s ease-in-out forwards;  
+			 }
+			 #weijinImg{
+			 	 animation: flyIn 4s ease-in-out forwards;  
+			 }
+			 #suitangImg{
+			 	 animation: flyIn 5s ease-in-out forwards;  
+			 }
+			 #songImg{
+			 		 animation: flyIn 6s ease-in-out forwards;  
+			 }
+			 #mingImg{
+			 		animation: flyIn 7s ease-in-out forwards;  
+			 }
+			 #qingImg{
+			 			animation: flyIn 8s ease-in-out forwards;  
+			 }
+			 @keyframes flyIn {
+			     from {  
+			         opacity: 0;  
+			         transform: translateY(-50px);  
+			     }  
+			     to {  
+			         opacity: 1;  
+			         transform: translateY(0);  
+			     }  
+    </style>  
+</head>
+  
+<body>  
+    <div class="main">  
+        <div class="image-container1"> 
+            <p id="chunqiuText" style="font-size: 30px;"><i><b>春秋战国</b></i></p>  
+            <img id="chunqiuImg" src="chunqiu.png" width="320">  
+            <div class="shou"><img id="xiaoshouImg1" src="xiaoshou.png" width="50" alt="闪烁的图片"></div>  
+  
+            <p id="qinhanText" style="font-size: 30px;"> <i><b>秦汉</b></i></p>
+            <img id="qinhanImg" src="qinhan.png" width="320"> 
+			<div id="container1">  
+			        <span id="leftArrow1" style="cursor: pointer;">&lt;</span>
+			  <p id="textOne" style="display: none;">秦汉时期女子汉服的形制主要包括<span class="red-text">曲裾 、直裾、襦裙</span>等。</br>
+</br>  <span class="red-text"> 曲裾</span>是秦汉时期女子常穿的一种服装。
+其特点是后片衣襟接长，加长后的衣襟形成三角，绕襟的周数分为单绕、双绕、三绕，衣长的长短分为长曲裾和短曲裾。曲裾出现的原因，与最初没有连裆的罩裤有关，下摆有了这样几重保护就符合理并合礼得多，因此，曲裾深衣在未发明袴的先秦至汉代较为流行。
+</br></br>
+<span class="red-text">直裾</span>的特点是衣襟从膝盖处向下垂直，形状类似于现在的旗袍。直裾在秦汉时期也较为流行，尤其是在贵族女子中穿着。
+</br></br>
+<span class="red-text">襦裙</span>是一种上下分割的汉服，上衣为紧身襦，下摆为宽松的裙子，通常以腰带系扎.襦裙的色彩较为丰富，其中以红、黄、绿等颜色最为常见。
+<br></br>
+此外，秦汉时期的女子汉服还有上衣下裳、深衣、襦裙等形制，上衣下裳是将上衣和下裳分开穿着，深衣是指上下缝合的服装，通常穿于襦裙外，里面需要中衣、裤、裙为衬。襦裙则是一种上下分割的汉服，上衣为紧身襦，下摆为宽松的裙子。</br>
+ </p>  
+   <p id="textFour" style="display: none;">秦始皇深受阴阳五行学说影响，相信秦克周，应当是水克火，因为周朝是“火气胜金，色尚赤”，所以颜色崇尚黑色。</br></br>这样，在秦朝，<span class="red-text">黑色为尊贵的颜色，衣饰也以黑色为时尚。</span>
+</br></br>汉朝时期，深衣和胡服开始推广。深衣将过去上下不相连的衣裳连接在一起，所以叫深衣。它的下摆不开衩，而是将衣襟接长，向后拥，即所谓的“续衽钩边”。深衣在战国时相当流行。
+</br></br>相传秦昭王的夫人得到了一件珍贵的皮草，非常高兴，于是劝说秦昭王先不要杀孟尝君。秦昭王怕夫人不高兴，只好让人把孟尝君先放了。得到了皮裘后，秦昭王的夫人并不满足，还想再要一件，无奈之下，孟尝君只得趁着秦王对他放下防备，带着一帮人趁夜逃跑了。
+</p>  
+           <span id="rightArrow1" style="cursor: pointer;">&gt;</span>  
+       </div>  
+           <div class="shou"><img id="xiaoshouImg2" src="xiaoshou.png" width="50" alt="闪烁的图片"></div>
+			 <button id="backButton" style="display: none;">返回</button>  
+			 
+					<p id="weijinText" style="font-size: 30px;"><i><b>魏晋</b></i></p>
+		    <img id="weijinImg" src="weijin.png"  width="270">
+		    <div class="shou"><img id="xiaoshouImg3" src="xiaoshou.png" width="50" alt="闪烁的图片" ></div>
+			
+					<p id="suitangText" style="font-size: 30px;"><i><b>隋唐</b></i></p>
+			<img id="suitangImg"src="suitang.png"  width="225">
+			<div id="container2">
+			        <span id="leftArrow2" style="cursor: pointer;">&lt;</span>
+			<p id="textTwo" style="display: none;" > 隋唐时期女子衣服的形制主要有<span class="red-text">襦裙、袍、衫、帔</span>等.</br></br>
+<span class="red-text">襦裙</span>是一种上下分割的汉服，上衣为紧身襦，下摆为宽松的裙子，通常以腰带系扎。襦裙的色彩较为丰富，其中以红、黄、绿等颜色最为常见。
+</br></br>
+<span class="red-text">袍</span>是上下缝合的服装，通常穿于襦裙外，里面需要中衣、裤、裙为衬。
+</br></br>
+<span class="red-text">衫</span>是一种单层或夹层的上衣，有长袖或短袖，通常为直领或交领。
+</br></br>
+<span class="red-text">帔</span>是一种类似披肩或围巾的服装，多为长条形，两端有装饰。
+<br></br>
+此外，隋唐时期女子衣服还有<span class="red-text">半臂、诃子裙、袒胸衣</span>等形制。</br>半臂类似于现在的短袖衬衫，诃子裙是一种腰部有系带的裙子，袒胸衣则是一种领口较低的上衣。</br></br>
+文献中出现石榴裙、柳花裙、藕丝裙、珍珠裙、翡翠裙、郁金裙、花笼裙、百鸟裙等。有的是指质地、颜色、款式，有的是指工艺。在众多的裙服中，石榴裙最为有名。</p>
+ <p id="textFive" style="display: none;">据传，杨贵妃非常喜欢牡丹花，她的衣裳上也绣满了牡丹花纹。每次杨贵妃穿着绣满牡丹花纹的衣物出场，都会让全场的焦点都集中在她身上。因此，<span class="red-text">牡丹花也成为了隋唐时期流行的花纹之一。</span>
+</br></br>杨贵妃身出“红开”井染红指汗的“巾帕”，是她浓抹厨脂与红粉的染色所致。除了脸上之外的装饰涂抹，杨贵妃还喜爱胸佩“香囊”。据说当是西域进奉的香料，香气十分浓厚持久，把这个香料放进精美的布囊之中，于是便有了“香囊”的产生。
+</br></br>杨贵妃喜欢穿着轻盈的<span class="red-text">薄纱衣</span>，这种衣服质轻如纱，非常适合她跳舞时的身姿，也让她看起来更加飘逸、优美；她穿着的<span class="red-text">罗裙</span>通常都是用锦绣织成的，色彩鲜艳、图案精美；她有一件<span class="red-text">紫色的薄绢衣服</span>，非常华丽。这种紫色的薄绢衣服在当时非常流行；她头上佩戴的<span class="red-text">金步摇</span>非常华丽，金雀、玉搔头等饰物也十分精致。 
+</p> 
+    <span id="rightArrow2" style="cursor: pointer;">&gt;</span>
+  </div>  
+			<div class="shou"><img id="xiaoshouImg4"src="xiaoshou.png" width="50" alt="闪烁的图片" ></div>
+				<button id="backButton" style="display: none;">返回</button>  
+        </div> 
+		<div class=img2>
+		 <p id="songText"style="font-size: 30px;"><i><b>宋</b></i></p>
+				<img id="songImg" src="song.png"  width="350" height="270">
+				<div class="shou"><img id="xiaoshouImg5"src="xiaoshou.png" width="50" alt="闪烁的图片" ></div>
+				 
+	    <p id="mingText" style="font-size: 30px;"><i><b>明</b></i></p>  
+	    <img id="mingImg" src="ming.png" width="350" >
+		<div id="container3">
+		        <span id="leftArrow3" style="cursor: pointer;">&lt;</span>
+		<p id="textThird" style="display: none; margin-top: -300px;"> 在明朝，皇后、皇妃等贵族女性的服饰尤为讲究。她们的礼服通常由袆衣、霞帔、背子等组成，上面绣有精美的纹饰图案，展现出华丽端庄、典雅高贵的气质。</br></br>
+明朝女子服饰的基本形制包括<span class="red-text">上衣下裳、袄裙、披风、比甲</span>等。</br></br>
+<span class="red-text">上衣下裳</span>是指上衣和下裳分开穿着，上衣多为交领或直领，下裳多为褶裙或马面裙。</br></br>
+<span class="red-text">袄裙</span>则是上衣下裙的组合，上衣为交领袄，下裙多为马面裙或褶裙。</br></br>
+<span class="red-text">披风</span>是一种对襟直领的外衣，大多直领对襟，颈部系带，披风的领型有各种各样，如立领、翻领、直领、盘领等。</br></br>
+<span class="red-text">比甲</span>则是一种无袖、无领的对襟两侧开衩及至膝下的马甲，其样式通常较后来的马甲要长，一般长至臀部或至膝部，有些更长，离地不到一尺，又叫做“背心”。最初宋朝的一种汉服形制，无袖侧开叉及膝。后来明朝时期，比甲盛行，成为明朝女子的主要服饰之一。
+</br></br>明朝女子还有<span class="red-text">凤冠霞帔</span>的形制。凤冠是一种以金玉为主的首饰，其形状类似帽子，但有所不同的是凤冠的顶部通常有一些凤凰的装饰。霞帔则是一种类似披肩的饰品，通常由彩锦或丝绣制成，上面也有一些凤凰或其他图案的装饰。这种服饰制度体现了明朝时期女性地位的提高和对于美的追求。
+</p>  
+<p id="textSix" style="display: none; margin-top: -300px;">在明朝时期，女性服饰的款式和色彩都非常丰富多样，这其中最有特色的要数<span class="red-text">“比甲”</span>了。</br></br><span class="red-text">“比甲”</span>是一种无袖、无领的对襟马甲，它的主要特征是将后片垂直剪下，缝于前片中心，从而将领口与对襟部分分开。这种服饰不仅穿着方便，而且能够展现出女性的身形线条。
+据传，明宣宗朱瞻基的皇后孙氏就非常喜欢穿着比甲。她曾经亲自设计了一种新的比甲款式，将后片剪成一个燕尾形状，使其更加符合人体曲线。这种款式迅速流行开来，成为了当时女性追逐的时尚。 
+ </br></br>明朝女性还喜欢穿着<span class="red-text">“霞帔”和“流苏”</span>等服饰。<span class="red-text">霞帔</span>是一种类似披肩的服饰，通常用锦绣制成，色彩鲜艳、图案精美。<span class="red-text">流苏</span>则是指在服饰边缘或袖口处垂挂的一串串流苏，这些流苏通常用丝线或珠子制成，不仅有装饰作用，还能够增添女性的柔美气质。
+</br></br>明朝女性还喜欢在头上佩戴各种头饰，如<span class="red-text">凤冠、花钗</span>等。这些头饰通常用金、银、玉等制成，上面镶嵌着各种宝石和珍珠，非常华丽。在穿着一些正式场合的礼服时，女性还会搭配一些玉佩、香囊等小物件，这些小物件不仅有实用价值，还能够展现出女性的品味和气质。
+</br></br>明朝女性服饰文化非常丰富多彩，各种服饰都有其独特的风格和特点。<span class="red-text">这些服饰不仅展现了明朝社会的风俗和习惯，也体现了中国古代文化源远流长。</span>
+</br>
+</p> 
+    <span id="rightArrow3" style="cursor: pointer;">&gt;</span>
+  </div> 
+	    <div class="shou"><img id="xiaoshouImg6"src="xiaoshou.png" width="50" alt="闪烁的图片" ></div>
+		<button id="backButton" style="display: none;">返回</button>  
+	    
+	    <p id="qingText" style="font-size: 30px;"><i><b>清</b></i></p>
+	    <img id="qingImg" src="qing.jpg"  width="350" height="260">
+	    <div class="shou"><img id="xiaoshouImg7"src="xiaoshou.png" width="50" alt="闪烁的图片" ></div>
+    </div> 
+     
+      <script>     
+	   
+                     document.getElementById('leftArrow1').addEventListener('click', function() {
+                         document.getElementById('textOne').style.display = 'block';  
+                         document.getElementById('textFour').style.display = 'none'; 
+                     });  
+                       
+                     document.getElementById('rightArrow1').addEventListener('click', function() {  
+                         document.getElementById('textOne').style.display = 'none';  
+                         document.getElementById('textFour').style.display = 'block'; 
+                     });  
+					 
+					 document.getElementById('leftArrow2').addEventListener('click', function() {
+					     document.getElementById('textTwo').style.display = 'block';  
+					     document.getElementById('textFive').style.display = 'none'; 
+					 });  
+					   
+					 document.getElementById('rightArrow2').addEventListener('click', function() {  
+					     document.getElementById('textTwo').style.display = 'none';  
+					     document.getElementById('textFive').style.display = 'block';  
+					 });  
+					 document.getElementById('leftArrow3').addEventListener('click', function() {
+					     document.getElementById('textThird').style.display = 'block';  
+					     document.getElementById('textSix').style.display = 'none'; 
+					 });  
+					   
+					 document.getElementById('rightArrow3').addEventListener('click', function() {  
+					     document.getElementById('textThird').style.display = 'none';  
+					     document.getElementById('textSix').style.display = 'block';  
+					 });  
+					 
+                         document.getElementById('qinhanText').addEventListener('click', function() {      
+                          document.getElementById('chunqiuText').style.display = 'none';     
+                          document.getElementById('weijinText').style.display = 'none';  
+     					document.getElementById('suitangText').style.display = 'none'; 
+     					document.getElementById('songText').style.display = 'none'; 
+     					document.getElementById('mingText').style.display = 'none'; 
+     					document.getElementById('qingText').style.display = 'none';
+     						 
+                          document.getElementById('chunqiuImg').style.display = 'none';  
+                          document.getElementById('weijinImg').style.display = 'none';
+     					document.getElementById('suitangImg').style.display = 'none';
+     					document.getElementById('songImg').style.display = 'none';
+     					document.getElementById('mingImg').style.display = 'none';
+     					document.getElementById('qingImg').style.display = 'none';
+
+                          document.getElementById('xiaoshouImg1').style.display = 'none';    
+                          document.getElementById('xiaoshouImg2').style.display = 'none';    
+                          document.getElementById('xiaoshouImg3').style.display = 'none';  
+     					 document.getElementById('xiaoshouImg4').style.display = 'none';
+     					document.getElementById('xiaoshouImg5').style.display = 'none';	
+     					document.getElementById('xiaoshouImg6').style.display = 'none';
+     					document.getElementById('xiaoshouImg7').style.display = 'none';
+						
+     					 
+                          document.getElementById('textOne').style.display = 'block';
+                      document.getElementById('backButton').style.display = 'block'; 
+					  document.getElementById('leftArrow1').style.display = 'block';
+					    document.getElementById('rightArrow1').style.display = 'block';
+                      });
+					  
+					document.getElementById('backButton').addEventListener('click', function() {  
+					    document.getElementById('chunqiuText').style.display = 'block';   
+					    document.getElementById('qinhanText').style.display = 'block';  
+						document.getElementById('weijinText').style.display = 'block';
+						document.getElementById('suitangText').style.display = 'block';
+                        document.getElementById('mingText').style.display = 'block';
+						document.getElementById('qingText').style.display = 'block';
+						document.getElementById('songText').style.display = 'block';						
+					    document.getElementById('chunqiuImg').style.display = 'block'; 
+					    document.getElementById('weijinImg').style.display = 'block'; 
+						document.getElementById('suitangImg').style.display = 'block'; 
+						document.getElementById('songImg').style.display = 'block'; 
+						document.getElementById('mingImg').style.display = 'block';
+						 document.getElementById('qingImg').style.display = 'block';
+						 document.getElementById('qinhanImg').style.display = 'block';
+						 document.getElementById('xiaoshouImg1').style.display = 'block';   
+					    document.getElementById('xiaoshouImg2').style.display = 'block';
+					    document.getElementById('xiaoshouImg3').style.display = 'block';
+						document.getElementById('xiaoshouImg4').style.display = 'block';
+						document.getElementById('xiaoshouImg5').style.display = 'block';
+						document.getElementById('xiaoshouImg6').style.display = 'block';
+						document.getElementById('xiaoshouImg7').style.display = 'block';
+					    document.getElementById('textOne').style.display = 'none'; 
+						document.getElementById('textTwo').style.display = 'none'; 
+						document.getElementById('textThird').style.display = 'none'; 
+					    document.getElementById('backButton').style.display = 'none'; 
+						 document.getElementById('leftArrow1').style.display = 'none'; 
+						 document.getElementById('rightArrow1').style.display = 'none'; 
+						 document.getElementById('leftArrow2').style.display = 'none';
+						 document.getElementById('rightArrow2').style.display = 'none'; 
+						 document.getElementById('leftArrow3').style.display = 'none';
+						 document.getElementById('rightArrow3').style.display = 'none'; 
+						 document.getElementById('textFour').style.display = 'none';
+						 document.getElementById('textFive').style.display = 'none';
+						 document.getElementById('textSix').style.display = 'none';
+					}); 
+					 
+					  document.getElementById('suitangText').addEventListener('click', function() {
+					      document.getElementById('chunqiuText').style.display = 'none';     
+					      document.getElementById('weijinText').style.display = 'none';  
+					      document.getElementById('qinhanText').style.display = 'none'; 
+					      document.getElementById('songText').style.display = 'none'; 
+					       document.getElementById('mingText').style.display = 'none'; 
+					       document.getElementById('qingText').style.display = 'none'; 
+					       						 
+					      document.getElementById('chunqiuImg').style.display = 'none';  
+					      document.getElementById('weijinImg').style.display = 'none';
+					    document.getElementById('qinhanImg').style.display = 'none';
+					    document.getElementById('songImg').style.display = 'none';
+					    document.getElementById('mingImg').style.display = 'none';
+					     document.getElementById('qingImg').style.display = 'none';
+					       					
+					      document.getElementById('xiaoshouImg1').style.display = 'none';    
+					      document.getElementById('xiaoshouImg2').style.display = 'none';    
+					      document.getElementById('xiaoshouImg3').style.display = 'none';  
+					      document.getElementById('xiaoshouImg4').style.display = 'none';
+					       document.getElementById('xiaoshouImg5').style.display = 'none';	
+					       document.getElementById('xiaoshouImg6').style.display = 'none';
+					      document.getElementById('xiaoshouImg7').style.display = 'none';
+					       					 
+					      document.getElementById('textTwo').style.display = 'block';
+					      document.getElementById('backButton').style.display = 'block';
+						  document.getElementById('leftArrow2').style.display = 'block';
+						    document.getElementById('rightArrow2').style.display = 'block';
+					  });   
+					   
+					  document.getElementById('mingText').addEventListener('click', function() {
+					  document.getElementById('chunqiuText').style.display = 'none';     
+					      document.getElementById('weijinText').style.display = 'none';  
+					      document.getElementById('qinhanText').style.display = 'none'; 
+					      document.getElementById('songText').style.display = 'none'; 
+					       document.getElementById('suitangText').style.display = 'none'; 
+					       document.getElementById('qingText').style.display = 'none'; 
+					       						 
+					      document.getElementById('chunqiuImg').style.display = 'none';  
+					      document.getElementById('weijinImg').style.display = 'none';
+					    document.getElementById('qinhanImg').style.display = 'none';
+					    document.getElementById('songImg').style.display = 'none';
+					    document.getElementById('suitangImg').style.display = 'none';
+					     document.getElementById('qingImg').style.display = 'none';
+					       					
+					      document.getElementById('xiaoshouImg1').style.display = 'none';    
+					      document.getElementById('xiaoshouImg2').style.display = 'none';    
+					      document.getElementById('xiaoshouImg3').style.display = 'none';  
+					      document.getElementById('xiaoshouImg4').style.display = 'none';
+					       document.getElementById('xiaoshouImg5').style.display = 'none';	
+					       document.getElementById('xiaoshouImg6').style.display = 'none';
+					      document.getElementById('xiaoshouImg7').style.display = 'none';
+					       					 
+					      document.getElementById('textThird').style.display = 'block';
+					      document.getElementById('backButton').style.display = 'block';
+						  
+						  document.getElementById('leftArrow3').style.display = 'block';
+						    document.getElementById('rightArrow3').style.display = 'block';
+					  }); 
+               </script>    
+</body>  
+</html>
